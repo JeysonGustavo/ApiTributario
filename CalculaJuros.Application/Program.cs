@@ -9,6 +9,7 @@ using Microsoft.Extensions.Logging;
 
 namespace CalculaJuros.Application
 {
+#pragma warning disable CS1591
     public class Program
     {
         public static void Main(string[] args)
@@ -20,7 +21,9 @@ namespace CalculaJuros.Application
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
+                    webBuilder.UseUrls("http://localhost:51804");
                     webBuilder.UseStartup<Startup>();
                 });
     }
+#pragma warning restore CS1591
 }
