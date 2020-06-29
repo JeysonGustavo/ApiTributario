@@ -33,5 +33,18 @@ namespace CalculaJuros.Test
             Assert.False(string.IsNullOrEmpty(retorno));
         }
         #endregion
+
+        #region Calcula Juros
+        [Theory]
+        [InlineData(100,0.01,5)]
+        [InlineData(102.65,0.01,5)]
+        [InlineData(203.14,0.01,5)]
+        public void CalculaJuros(decimal valorInicial, decimal taxa, int tempo)
+        {
+            var retorno = _calculaJurosProvider.CalculaJuros(valorInicial, taxa, tempo);
+
+            Assert.True(retorno > 0);
+        }
+        #endregion
     }
 }
