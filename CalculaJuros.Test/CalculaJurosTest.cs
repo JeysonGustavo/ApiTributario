@@ -1,5 +1,5 @@
-﻿using CalculaJuros.Manager.Providers;
-using CalculaJuros.Provider;
+﻿using CalculaJuros.Manager.Providers.CalculaJuros;
+using CalculaJuros.Provider.CalculaJuros;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using Xunit;
@@ -9,7 +9,7 @@ namespace CalculaJuros.Test
     public class CalculaJurosTest
     {
         #region Propriedades
-        private readonly IJurosProvider _jurosProvider;
+        private readonly ICalculaJurosProvider _calculaJurosProvider;
         private IServiceCollection services;
         private IServiceProvider serviceProvider;
         #endregion
@@ -18,20 +18,20 @@ namespace CalculaJuros.Test
         public CalculaJurosTest()
         {
             services = new ServiceCollection();
-            services.AddTransient<IJurosProvider, JurosProvider>();
+            services.AddTransient<ICalculaJurosProvider, CalculaJurosProvider>();
             serviceProvider = services.BuildServiceProvider();
-            _jurosProvider = serviceProvider.GetRequiredService<IJurosProvider>();
+            _calculaJurosProvider = serviceProvider.GetRequiredService<ICalculaJurosProvider>();
         }
         #endregion
 
-        #region Test Valor Juros
+        #region Show Me The Code
         [Fact]
-        public void ValorJuros()
+        public void ShowMeTheCode()
         {
-            var taxa = _jurosProvider.RetornaTaxaJuros();
+            var retorno = _calculaJurosProvider.ShowMeTheCode();
 
-            Assert.Equal(0.01m, taxa);
-        } 
+            Assert.False(string.IsNullOrEmpty(retorno));
+        }
         #endregion
     }
 }

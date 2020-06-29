@@ -7,6 +7,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using TaxaJuros.Manager.Managers.TaxaJuros;
+using TaxaJuros.Manager.Providers.TaxaJuros;
+using TaxaJuros.Provider.TaxaJuros;
 
 namespace TaxaJuros.Application
 {
@@ -65,6 +68,18 @@ namespace TaxaJuros.Application
                 //securityRequirement.Add(securitySchema, new[] { "Bearer" });
                 //c.AddSecurityRequirement(securityRequirement);
             });
+            #endregion
+
+            #region Services Transient
+
+            #region Managers
+            services.AddTransient<ITaxaJurosManager, TaxaJurosManager>();
+            #endregion
+
+            #region Providers
+            services.AddTransient<ITaxaJurosProvider, TaxaJurosProvider>();
+            #endregion
+
             #endregion
         }
 

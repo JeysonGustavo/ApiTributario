@@ -1,8 +1,8 @@
-﻿using CalculaJuros.Manager.Models.Result;
+﻿using TaxaJuros.Manager.Models.Result;
 
-namespace CalculaJuros.Manager.Managers
+namespace TaxaJuros.Manager.Managers.TaxaJuros
 {
-    public interface IJurosManager
+    public interface ITaxaJurosManager
     {
         /// <summary>
         /// Retorna a Taxa de Juros

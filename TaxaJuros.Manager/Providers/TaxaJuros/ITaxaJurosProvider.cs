@@ -1,6 +1,6 @@
-﻿namespace CalculaJuros.Manager.Providers
+﻿namespace TaxaJuros.Manager.Providers.TaxaJuros
 {
-    public interface IJurosProvider
+    public interface ITaxaJurosProvider
     {
         /// <summary>
         /// Retorna a Taxa de Juros

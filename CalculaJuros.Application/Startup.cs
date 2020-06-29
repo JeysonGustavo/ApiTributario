@@ -1,9 +1,12 @@
 using System;
 using System.IO;
 using System.Reflection;
-using CalculaJuros.Manager.Managers;
-using CalculaJuros.Manager.Providers;
-using CalculaJuros.Provider;
+using CalculaJuros.Manager.Managers.CalculaJuros;
+using CalculaJuros.Manager.Managers.TaxaJuros;
+using CalculaJuros.Manager.Providers.CalculaJuros;
+using CalculaJuros.Manager.Providers.TaxaJuros;
+using CalculaJuros.Provider.CalculaJuros;
+using CalculaJuros.Provider.TaxaJuros;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -73,11 +76,13 @@ namespace CalculaJuros.Application
             #region Services Transient
 
             #region Managers
-            services.AddTransient<IJurosManager, JurosManager>();
+            services.AddTransient<ICalculaJurosManager, CalculaJurosManager>();
+            services.AddTransient<ITaxaJurosManager, TaxaJurosManager>();
             #endregion
 
             #region Providers
-            services.AddTransient<IJurosProvider, JurosProvider>();
+            services.AddTransient<ICalculaJurosProvider, CalculaJurosProvider>();
+            services.AddTransient<ITaxaJurosProvider, TaxaJurosProvider>();
             #endregion
 
             #endregion

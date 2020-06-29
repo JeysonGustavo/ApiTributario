@@ -1,6 +1,6 @@
 using System;
 
-namespace TaxaJuros.Application
+namespace WebApplication1
 {
     public class WeatherForecast
     {

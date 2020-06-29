@@ -23,21 +23,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{1D1E3387-0
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{902A66B9-25CA-47D7-A65B-A713BFF13F4D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculaJuros.Application", "CalculaJuros.Application\CalculaJuros.Application.csproj", "{B35E17D5-C4F7-47CC-9CEB-618CF6FB01AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculaJuros.Application", "CalculaJuros.Application\CalculaJuros.Application.csproj", "{B35E17D5-C4F7-47CC-9CEB-618CF6FB01AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculaJuros.Manager", "CalculaJuros.Manager\CalculaJuros.Manager.csproj", "{87679DFA-459B-45E9-9A44-A0D409FDD587}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculaJuros.Manager", "CalculaJuros.Manager\CalculaJuros.Manager.csproj", "{87679DFA-459B-45E9-9A44-A0D409FDD587}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculaJuros.Provider", "CalculaJuros.Provider\CalculaJuros.Provider.csproj", "{403EFBDD-E28E-49F9-B42A-6CA6A40B62AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculaJuros.Provider", "CalculaJuros.Provider\CalculaJuros.Provider.csproj", "{403EFBDD-E28E-49F9-B42A-6CA6A40B62AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculaJuros.Test", "CalculaJuros.Test\CalculaJuros.Test.csproj", "{201F4287-A191-468A-A8A5-7B3527C49771}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculaJuros.Test", "CalculaJuros.Test\CalculaJuros.Test.csproj", "{201F4287-A191-468A-A8A5-7B3527C49771}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxaJuros.Application", "TaxaJuros.Application\TaxaJuros.Application.csproj", "{28B89E24-D7AD-4BAF-B4F8-035F3DFBCA12}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaxaJuros.Application", "TaxaJuros.Application\TaxaJuros.Application.csproj", "{28B89E24-D7AD-4BAF-B4F8-035F3DFBCA12}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxaJuros.Manager", "TaxaJuros.Manager\TaxaJuros.Manager.csproj", "{F68C9DAF-FE53-413C-8518-5568CC342C17}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaxaJuros.Manager", "TaxaJuros.Manager\TaxaJuros.Manager.csproj", "{F68C9DAF-FE53-413C-8518-5568CC342C17}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxaJuros.Provider", "TaxaJuros.Provider\TaxaJuros.Provider.csproj", "{F94F517B-01CB-4595-A25C-AB8CC8F1ADDC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaxaJuros.Provider", "TaxaJuros.Provider\TaxaJuros.Provider.csproj", "{F94F517B-01CB-4595-A25C-AB8CC8F1ADDC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxaJuros.Test", "TaxaJuros.Test\TaxaJuros.Test.csproj", "{A269574F-1704-43BA-B29D-1E48C4E19A2B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaxaJuros.Test", "TaxaJuros.Test\TaxaJuros.Test.csproj", "{A269574F-1704-43BA-B29D-1E48C4E19A2B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Steeltoe.Common.Http" Version="2.4.4" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\CalculaJuros.Manager\CalculaJuros.Manager.csproj" />
   </ItemGroup>
 
